@@ -1,0 +1,8 @@
+C:\Users\Linguistico\Desktop\Tassonomia\Tassonomia\bin\Debug\Tassonomia.exe.config
+D:\Informatica\Tassonomia\Tassonomia\bin\Debug\Tassonomia.exe.config
+G:\Informatica\Tassonomia\Tassonomia\bin\Debug\Tassonomia.exe.config
+G:\Informatica\Tassonomia\Tassonomia\obj\Debug\Tassonomia.csprojResolveAssemblyReference.cache
+G:\Informatica\Tassonomia\Tassonomia\bin\Debug\Tassonomia.exe
+G:\Informatica\Tassonomia\Tassonomia\bin\Debug\Tassonomia.pdb
+G:\Informatica\Tassonomia\Tassonomia\obj\Debug\Tassonomia.exe
+G:\Informatica\Tassonomia\Tassonomia\obj\Debug\Tassonomia.pdb
