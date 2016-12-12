@@ -6,27 +6,20 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    class Tonno:Pesce
+    class Tonno:Pesce,Animale_Squamoso
     {
-        public override string getTipoanimale()
-        {
-            return tipoannimale;
-        }
-        public override string getHabitat()
-        {
-            return habitat;
-        }
-        public override string getMovimento()
-        {
-            return movimento;
-        }
-        public override string getNomeanimale()
-        {
-            return nomeanimale;
-        }
-        public Tonno(): base("Tonno", "Pesce")
+        public Tonno()
+            : base("Tonno", "Pesce", "Pesce", "Mare", "nuoto")
         {
 
+
         }
+        public void setManto()
+        {
+            mant = "squame";
+        }
+
+
+        
     }
 }

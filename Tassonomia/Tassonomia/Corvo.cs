@@ -8,25 +8,15 @@ namespace Tassonomia
 {
     class Corvo:Uccello
     {
-        public override string getTipoanimale()
-        {
-            return tipoannimale;
-        }
-        public override string getHabitat()
-        {
-            return habitat;
-        }
-        public override string getMovimento()
-        {
-            return movimento;
-        }
-        public override string getNomeanimale()
-        {
-            return nomeanimale;
-        }
-        public Corvo(): base("Corvo","Volatile")
+         public Corvo()
+            : base("Corvo", "volatile", "specie del corvo", "castelli tenebrosi", "volot")
         {
 
+        }
+        
+        public void setNzampe()
+        {
+            numzampe = 2;
         }
     }
 }

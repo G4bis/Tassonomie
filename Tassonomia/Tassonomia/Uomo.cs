@@ -6,27 +6,19 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    class Uomo : Bipede
+    class Uomo:Mammifero_Terrestre,Animale_Peloso,Bipede
     {
-        public override string getTipoanimale()
+        public Uomo():base("Uomo", "Umano", "Umanoide", "Terra", "Camminata")
         {
-            return tipoannimale;
+            
         }
-        public override string getHabitat()
+        public void setManto()
         {
-            return habitat;
+            mant = "pelle";
         }
-        public override string getMovimento()
+        public void setNzampe()
         {
-            return movimento;
-        }
-        public override string getNomeanimale()
-        {
-            return nomeanimale;
-        }
-        public Uomo(): base("Uomo", "Umano")
-        {
-
+            numzampe = 2;
         }
     }
 }

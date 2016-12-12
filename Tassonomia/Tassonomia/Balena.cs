@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    interface Bipede
+    class Balena:Mammifero_Marino
     {
-        void setNzampe();
+        public Balena():base("Balena","mammifero","cetaceo","oceani","nuoto")
+        {
+            mant = "pelle";
+        }
+
     }
 }

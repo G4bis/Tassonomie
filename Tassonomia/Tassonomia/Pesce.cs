@@ -6,29 +6,20 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    abstract class Pesce:Animale_Marino
+    abstract class Pesce : Animale_Marino, Animale_Squamoso
     {
-        public override string getTipoanimale()
+        public Pesce(string nome, string tipo, string specie, string habit, string mov)
+            : base("Pesce Generico", "Pesce", "Pesce Generico", "Acqua", "Movimento di un pesce generico", "Manto squamoso")
         {
-            return tipoannimale;
+            noman = nome;
+            tipoan = tipo;
+            spec = specie;
+            habitat = habit;
+            movimen = mov;
         }
-        public override string getHabitat()
+        public void setManto()
         {
-            return habitat;
-        }
-        public override string getMovimento()
-        {
-            return movimento;
-        }
-        public override string getNomeanimale()
-        {
-            return nomeanimale;
-        }
-        public Pesce(string nome,string tipo):base("Pesce generico","Pesce")
-        {
-            nomeanimale = nome;
-            tipoannimale=tipo;
-            numerozampe = 0;
+            mant = "squame";
         }
     }
 }

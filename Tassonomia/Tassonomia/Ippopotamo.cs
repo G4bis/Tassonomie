@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    class Pinguino:Uccello_Marino,Animale_Piumoso,Bipede
+    class Ippopotamo:Mammifero_Fluviale,Quadrupede
     {
-        public Pinguino()
-            : base("Pinguino", "volatile", "pinguino specifico(?)", "polo nord", "camminata")
+        public Ippopotamo()
+            : base("Ippopotamo", "mammifero", "specie dell'ippopotamo", "savana", "cammino")
         {
 
         }
         public void setManto()
         {
-            mant = "piumato";
+            mant = "Pelle";
         }
         public void setNzampe()
         {
-            numzampe = 2;
+            numzampe = 4;
         }
     }
 }

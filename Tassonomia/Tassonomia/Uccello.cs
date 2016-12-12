@@ -6,31 +6,21 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    abstract class Uccello:Animale
+    abstract class Uccello:Animale_Terrestre,Animale_Piumoso
     {
-        public override string getTipoanimale()
+        public Uccello(string nome, string tipo, string specie, string habit, string mov)
+            : base("Uccello Generico", "Uccello", "Uccello Generico", "Alberi", "Volo")
         {
-            return tipoannimale;
+            noman = nome;
+            tipoan = tipo;
+            spec = specie;
+            habitat = habit;
+            movimen = mov;
         }
-        public override string getHabitat()
+        public void setManto()
         {
-            return habitat;
+            mant = "piumato";
         }
-        public override string getMovimento()
-        {
-            return movimento;
-        }
-        public override string getNomeanimale()
-        {
-            return nomeanimale;
-        }
-        
-        public Uccello(string nome,string tipo):base("Uccello generico","Uccello","Alberi","Vola")
-        {
-            numerozampe = 2;
-            nomeanimale = nome;
-            tipoannimale = tipo;
-        }
-
+       
     }
 }

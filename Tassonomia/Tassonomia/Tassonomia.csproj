@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D7CC776-6A6D-45F1-A0BB-984BD4AA8903}</ProjectGuid>
+    <ProjectGuid>{78E39FB0-278A-40FC-A00C-632AC361A7D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tassonomia</RootNamespace>
@@ -42,13 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animale.cs" />
-    <Compile Include="Animale_Acquatico.cs" />
-    <Compile Include="Animale_fluviale.cs" />
     <Compile Include="Animale_Marino.cs" />
-    <Compile Include="Animale_terrestre.cs" />
+    <Compile Include="Animale_Peloso.cs" />
+    <Compile Include="Animale_Piumoso.cs" />
+    <Compile Include="Animale_Squamoso.cs" />
+    <Compile Include="Animale_Terrestre.cs" />
+    <Compile Include="Balena.cs" />
     <Compile Include="Bipede.cs" />
     <Compile Include="Cavallo.cs" />
     <Compile Include="Corvo.cs" />
+    <Compile Include="Ippopotamo.cs" />
+    <Compile Include="Mammifero_Marino.cs" />
+    <Compile Include="Mammifero_Terrestre.cs" />
     <Compile Include="Pesce.cs" />
     <Compile Include="Pinguino.cs" />
     <Compile Include="Program.cs" />
@@ -57,10 +62,14 @@
     <Compile Include="Salmone.cs" />
     <Compile Include="Tonno.cs" />
     <Compile Include="Uccello.cs" />
+    <Compile Include="Uccello_Marino.cs" />
     <Compile Include="Uomo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mammifero_Fluviale.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

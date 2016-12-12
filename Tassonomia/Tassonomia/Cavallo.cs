@@ -6,27 +6,21 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    class Cavallo:Quadrupede
+    class Cavallo:Mammifero_Terrestre,Animale_Peloso,Quadrupede
     {
-       public override string getTipoanimale()
-        {
-            return tipoannimale;
-        }
-        public override string getHabitat()
-        {
-            return habitat;
-        }
-        public override string getMovimento()
-        {
-            return movimento;
-        }
-        public override string getNomeanimale()
-        {
-            return nomeanimale;
-        }
-        public Cavallo(): base("Cavallo", "Quadrupede")
+         public Cavallo()
+            : base("Cavallo", "Quadrupede", "equino", "Macellaio banco carne", "Galoppo")
         {
 
+
         }
+         public void setManto()
+         {
+             mant = "pelo";
+         }
+         public void setNzampe()
+         {
+             numzampe = 4;
+         }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    interface Bipede
+    interface Animale_Squamoso
     {
-        void setNzampe();
+         void setManto();
     }
 }

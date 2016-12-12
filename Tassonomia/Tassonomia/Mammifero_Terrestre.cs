@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    abstract class Animale_Marino:Animale
+    abstract class Mammifero_Terrestre:Animale_Terrestre
     {
-        public Animale_Marino(string nome,string tipo,string specie,string habit,string mov,string manto):base("Animale Marino generico","Animale marino","Animale generico","Acqua","Movimento generico","Manto generico")
+        public Mammifero_Terrestre(string nome, string tipo, string specie, string habit, string mov): base("Mammifero Terrestre Generico", "Mammifero Terrestre", "Mammifero Generico", "Terra", "Movimento terrestre generico")
         {
             noman = nome;
             tipoan = tipo;
             spec = specie;
             habitat = habit;
             movimen = mov;
-            mant = manto;
+           
         }
     }
 }

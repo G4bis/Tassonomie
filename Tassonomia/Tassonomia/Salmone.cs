@@ -6,27 +6,15 @@ using System.Threading.Tasks;
 
 namespace Tassonomia
 {
-    class Salmone:Animale_fluviale
+    class Salmone:Pesce
     {
-        public override string getTipoanimale()
-        {
-            return tipoannimale;
-        }
-        public override string getHabitat()
-        {
-            return habitat;
-        }
-        public override string getMovimento()
-        {
-            return movimento;
-        }
-        public override string getNomeanimale()
-        {
-            return nomeanimale;
-        }
-        public Salmone(): base("Salmone", "Pesce")
+        public Salmone():base("Salmone","pesce","pescie","Fiume","nuoto")
         {
 
+        }
+        public void setManto()
+        {
+            mant = "squame";
         }
     }
 }

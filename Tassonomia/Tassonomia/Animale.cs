@@ -8,33 +8,33 @@ namespace Tassonomia
 {
     abstract class Animale
     {
-        protected string nomeanimale;
-        protected string tipoannimale;
-        protected string habitat;
-        protected int numerozampe;
-        protected string movimento;
-        public abstract string getMovimento();
-        public abstract string getNomeanimale();
-        public abstract string getTipoanimale();
-        public abstract string getHabitat();
-        
-
-        public Animale(string nome, string tipo, string habit, string mov)
+         protected string noman;
+         protected string tipoan;
+         protected string spec;
+         protected string habitat;
+         protected int numzampe;
+         protected string movimen;
+         protected string mant;
+        public Animale(string nome,string tipo,string specie,string habit,string movimento,string manto)
         {
-            nomeanimale = nome;
-            tipoannimale = tipo;
+            noman = nome;
+            tipoan = tipo;
+            spec = specie;
             habitat = habit;
-           
-            movimento = mov;
+            movimen = movimento;
+            mant = manto;
 
         }
+        
         public void Riepilogo()
         {
-            Console.WriteLine("Nome " + nomeanimale);
-            Console.WriteLine("Tipo di animale " + tipoannimale);
-            Console.WriteLine("Habitat " + habitat);
-            Console.WriteLine("Numero di zampe "+numerozampe);
-            Console.WriteLine("Questo animale si muove : " + movimento);
+            Console.WriteLine("Nome Animale: " + noman);
+            Console.WriteLine("Tipo Animale: " + tipoan);
+            Console.WriteLine("Specie Animale: " + spec);
+            Console.WriteLine("Habitat Animale: " + habitat);
+            Console.WriteLine("Numero di zampe: " + numzampe);
+            Console.WriteLine("Movimento: " + movimen);
+            Console.WriteLine("Manto: " + mant);
         }
 
     }
